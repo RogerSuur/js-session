@@ -19,7 +19,6 @@ function get (a) {
 };
 
 
-function set () {
-
-
+function set (a ,b ) {
+    return sourceObject.a = b
 };
