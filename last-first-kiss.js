@@ -11,7 +11,8 @@ function first (a) {
 };
 
 function last (a) {
- 
+    var argumentLength = a.length
+    return a[argumentLength] 
 };
 
 function kiss (a) {
