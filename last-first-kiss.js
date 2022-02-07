@@ -12,9 +12,10 @@ function first (a) {
 
 function last (a) {
     var argumentLength = a.length
-    return a[argumentLength] 
+    return a[argumentLength-1] 
 };
 
 function kiss (a) {
-
+    var argumentLength = a.length
+    var returnedVariable = [a[argumentLength-1],a[0]]
 };
