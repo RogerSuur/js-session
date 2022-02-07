@@ -1,4 +1,4 @@
 const str = "String";
-const num = "Number";
-const bool = "Boolean";
+const num = 123;
+const bool = true;
 const undef;
