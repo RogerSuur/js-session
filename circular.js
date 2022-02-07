@@ -4,6 +4,6 @@ const circular = {
     circular(circular)
 }
 
-function circular(a) {
+function circular(circular) {
     return circular(circular)
 }
