@@ -9,6 +9,6 @@ var smalls = (-1.7976931348623157e308 -1);
 var MAX_INT = Math.pow(2, 53); // 9 007 199 254 740 992
 for (var i = MAX_INT; i < MAX_INT + 2; ++i) {
     biggie ++
-}
+};
 
-var biggie = {}
+var biggie = 1;d
