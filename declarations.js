@@ -12,7 +12,7 @@ arr: an array of the 3 values: 4, undefined, '2'
 obj: an object with 3 property (str, num & bool)
 nested, arr and obj must be frozen to prevent changes from them.*/
 
-const escapeStr = "i/a\e`d'\"d";
+const escapeStr = "i/a\\e`d'\"d";
 const arr = [4, 2];
 
 const obj = {
