@@ -23,8 +23,8 @@ const obj = {
 };
 
 const nested = {
-     arr : [4, undefined, '2'],
-      obj : {
+     arr: [4, undefined, '2'],
+      obj: {
         str: "String",
         num: 123,
         bool: true,
