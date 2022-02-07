@@ -7,14 +7,16 @@
 
 var more = (a) => a + 1;
 
-var less = function less(a) {
+var less = less(a);
+
+function less(a) {
     a - 1
-}
+};
 
 var add = function add(a, b) {
     a  * b
-}
+};
 
 var sub = function sub(a,b) {
     a/b
-}
+};
