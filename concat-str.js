@@ -2,6 +2,8 @@
 
 
 function concatStr (a,b) {
-    returnVariable = 'a+b';
+    var a = Number('a')
+    var b = Number('b')
+    returnVariable = a+b;
     return returnVariable;
 };
