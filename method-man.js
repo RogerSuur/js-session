@@ -24,7 +24,7 @@ function yell(a) {
 
 function whisper(a) {
     let myText = a.toLowerCase()
-    let myText = '*' + myText + '*'
+    myText = '*' + myText + '*'
     return myText
 };
 
