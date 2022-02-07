@@ -2,7 +2,7 @@
 
 var circular= {
     circular: function circular() {
-
+        circular
     }
 };    
 
