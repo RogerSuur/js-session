@@ -27,13 +27,10 @@ const years = {
 }
 
 
-console.log(dogyears('mercury', 2134835688))
-
 
 function dogYears(planet, seconds) {
     var constant = years[planet]
     // console.log(constant)
     const dogYear = (seconds / 31557600) * 7 / constant
-    var rounderDogYear = dogYear.toFixed(2)
-    return rounderDogYear
+    return dogYear.toFixed(2)
 }
