@@ -26,11 +26,11 @@ const years = {
     'neptune': 164.79132,
 }
 
-
+console.log(dogYears('earth', 1000000000))
 
 function dogYears(planet, seconds) {
     var constant = years[planet]
     // console.log(constant)
     const dogYear = (seconds / 31557600) * 7 / constant
-    return dogYear.toFixed(2)
+    return parseFloat(dogYear.toFixed(2))
 }
