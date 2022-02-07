@@ -12,7 +12,7 @@ arr: an array of the 3 values: 4, undefined, '2'
 obj: an object with 3 property (str, num & bool)
 nested, arr and obj must be frozen to prevent changes from them.*/
 
-const escapeStr = "i/a\e`d'd";
+const escapeStr = "i/a\e`d'\"d";
 const arr = [4, 2];
 
 const obj = {
@@ -20,7 +20,11 @@ const obj = {
     num: "123",
     bool: true,
     undef: undefined,
-}
+};
+
+Object.freeze(arr);
+Object.freeze(obj);
+Object.freeze(nested);
 
 const nested = {
      arr : [4, 2, undefined],
@@ -30,4 +34,4 @@ const nested = {
         bool: true,
     }
     
-}
+};
