@@ -5,7 +5,7 @@
 // A way must be found to have clone1 and clone2 keep the original values while 
 //samePerson changes with person.
 
-const person = {
+var person = {
     name: 'Rick',
     age: 77,
     country: 'US',
