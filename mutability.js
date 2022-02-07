@@ -5,12 +5,6 @@
 // A way must be found to have clone1 and clone2 keep the original values while 
 //samePerson changes with person.
 
-var person = {
-    name: 'Rick',
-    age: 77,
-    country: 'US',
-  }
-
 const clone1 = {
     name: 'Rick',
     age: 77,
@@ -23,9 +17,14 @@ const clone2 = {
     country: 'US',
 };
 
-var samePerson = person;
+var samePerson = {
+    name: '',
+    age: null,
+    cointru: '',
+};
 
 person.age = person.age+1;
 person.country = 'FR';
 
+samePerson = person;
 console.log(samePerson)
