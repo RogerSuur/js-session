@@ -12,21 +12,14 @@
 //     log: console.log,
 // };
 
-var sourceObjectCopy = {};
-sourceObjectCopy = sourceObject;
-set('num', 55);
-console.log(sourceObjectCopy);
-console.log(get('num'));
+
 
 function get (a) {
-    return sourceObjectCopy[a]
+    return sourceObject[a]
 };
 
 
 function set (a, b) {
-   
-    
-    console.log(b)
-    return sourceObjectCopy[a] = b
+    return sourceObject[a] = b
 };
 
