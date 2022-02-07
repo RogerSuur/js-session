@@ -9,6 +9,6 @@ var more = (a) => a + 1;
 
 var less = (a) => a -1;
 
-var add = (a,b) => a*b;
+var add = (a,b) => a+b;
 
-var sub = (a,b) => a/b;
+var sub = (a,b) => a-b;
