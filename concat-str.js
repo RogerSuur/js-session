@@ -3,4 +3,7 @@
 
 function concatStr (a,b) {
     return 'a+b'
-}
+
+    //const returnVariable = '';
+    return returnVariable;
+};
