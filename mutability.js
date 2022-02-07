@@ -23,7 +23,9 @@ const clone2 = {
     country: 'US',
 };
 
+var samePerson = person;
+
 person.age = person.age+1;
 person.country = 'FR';
 
-var samePerson = person;
+console.log(samePerson)
