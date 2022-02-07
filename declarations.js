@@ -17,7 +17,7 @@ const arr = [4, '2'];
 
 const obj = {
     str: "String",
-    num: "123",
+    num: 123,
     bool: true,
     undef: undefined,
 };
