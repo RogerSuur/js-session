@@ -30,9 +30,11 @@ function whisper(a) {
 
 function capitalize(a) {
     //let myText = a.replace(/^\w/, (c) => c.toUpperCase());
-    let myText = a.join(' ')
-    let myText = a.trim().toLowerCase().replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
-    return myText
+   // let myText = a
+   // let myText2 = myText[0].toUpperCase()
+   // myText2[1,myText2.length] =  myText[1,myText2.length].toLowerCase()
+   // let myText3 = myText.join('')
+    return a[0].toUpperCase() + a.slice(1).toLowerCase()
 };
 
 console.log(capitalize('str'));
