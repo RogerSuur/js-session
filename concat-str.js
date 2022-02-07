@@ -2,7 +2,6 @@
 
 
 function concatStr (a,b) {
-    const returnVariable = '';
-    returnVariable = a+b;
+    returnVariable = 'a+b';
     return returnVariable;
 };
