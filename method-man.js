@@ -29,7 +29,8 @@ function whisper(a) {
 };
 
 function capitalize(a) {
-    let myText = a.replace(/^\w/, (c) => c.toUpperCase());
+    //let myText = a.replace(/^\w/, (c) => c.toUpperCase());
+    let myText = a.trim().toLowerCase().replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
     return myText
 };
 
