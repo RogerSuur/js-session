@@ -26,7 +26,7 @@ const nested = {
      arr : [4, 2, undefined],
       obj : {
         str: "String",
-        num: "123",
+        num: 123,
         bool: true,
     }
     
