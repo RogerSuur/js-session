@@ -5,9 +5,7 @@
 // add that takes 2 arguments and add them
 // sub that takes 2 arguments and substract them
 
-var more = function more (a) {
-    a + 1
-}
+var more = (a) => a + 1;
 
 var less = function less(a) {
     a - 1
