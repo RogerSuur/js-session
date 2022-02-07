@@ -8,23 +8,24 @@
 //case only for the first letter, and in lowercase for the rest of the string
 
 function words(a) {
-    let myArray = a.split(" ")
-    return myArray
+    let myText = a.split(" ")
+    return myText
 };
 
 function sentence(a) {
-    let myArray = a.join(' ')
-    return myArray
+    let myText = a.join(' ')
+    return myText
 };
 
 function yell(a) {
-    let myArray = a.toUpperCase()
-    return myArray
+    let myText = a.toUpperCase()
+    return myText
 };
 
 function whisper(a) {
-    let myArray = text.toLowerCase()
-    return myArray
+    let myText = text.toLowerCase()
+    let myText = '*' + myText + '*'
+    return myText
 };
 
 function capitalize(a) {
