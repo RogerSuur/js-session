@@ -8,8 +8,8 @@
 // t(() => concatStr(concatStr, concatStr) === String(concatStr).repeat(2))
 
 function concatStr (a,b) {
-    var texta = a.toString(a)
-    var textb = b.toString(b)
-    var returnVariable = texta+textb;
-    return returnVariable;
+    var texta = a.toString()
+    var textb = b.toString()
+    var returnVariable = texta+textb
+    return returnVariable
 };
