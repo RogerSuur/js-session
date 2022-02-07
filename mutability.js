@@ -12,8 +12,17 @@ const person = {
     country: 'US',
 };
 
-const clone1 = person;
-const clone2 = person;
+const clone1 = {
+    name: 'Rick',
+    age: 77,
+    country: 'US',
+};
+
+const clone2 = {
+    name: 'Rick',
+    age: 77,
+    country: 'US',
+};
 
 person.age = person.age+1;
 person.country = 'FR';
