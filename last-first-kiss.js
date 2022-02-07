@@ -6,6 +6,7 @@
 
 // a kiss function that returns an array of 2 elements the last and the first element, in that order
 
+
 function first (a) {
     return a[0]
 };
@@ -15,7 +16,11 @@ function last (a) {
     return a[argumentLength-1] 
 };
 
-function kiss (a) {
+function kiss(a) {
     var argumentLength = a.length
     var returnedVariable = [a[argumentLength-1],a[0]]
+    return returnedVariable
 };
+
+const result = kiss([1,2,3,4,5,6]);
+console.log(result);
