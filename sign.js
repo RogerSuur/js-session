@@ -11,5 +11,5 @@ function sign(a){
 }
 
 function sameSign(a,b){
-    return a>0&&b>0 ? true : (a<=0&&b<=0 ? true : false)
+    return a*b>0 ? true : (a||b==0&&a*b>=0? true : false)
 }
