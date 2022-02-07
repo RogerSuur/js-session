@@ -5,5 +5,5 @@ const circular= {
 
 
 function circular() {
-    return circular
+    circular
 };
