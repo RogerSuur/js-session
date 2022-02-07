@@ -12,10 +12,10 @@ const person = {
     country: 'US',
 };
 
-let clone1 = person;
-let clone2 = person;
+const clone1 = person;
+const clone2 = person;
 
 person.age = person.age+1;
 person.country = 'FR';
 
-let samePerson = person;
+const samePerson = person;
