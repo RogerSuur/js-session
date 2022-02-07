@@ -23,13 +23,14 @@ function yell(a) {
 };
 
 function whisper(a) {
-    let myText = text.toLowerCase()
+    let myText = a.toLowerCase()
     let myText = '*' + myText + '*'
     return myText
 };
 
 function capitalize(a) {
-
+    let myText = a.replace(/^\w/, (c) => c.toUpperCase());
+    return myText
 };
 
 console.log()
