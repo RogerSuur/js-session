@@ -34,4 +34,7 @@ function capitalize(a) {
     return myText
 };
 
-console.log()
+console.log(capitalize('str'));
+console.log(capitalize('STR'));
+console.log(capitalize('zapZap'));
+console.log(capitalize('zap ZAP'));
