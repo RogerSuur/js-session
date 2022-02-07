@@ -10,6 +10,6 @@ function sign(a){
     return a===0 ? a : (a>0 ? 1 : -1) 
 }
 
-function sameSign(a){
-
+function sameSign(a,b){
+    return a>0&&b>0 ? true (a<0&&b<0 ? true : false)
 }
