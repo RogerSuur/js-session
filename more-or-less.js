@@ -5,18 +5,18 @@
 // add that takes 2 arguments and add them
 // sub that takes 2 arguments and substract them
 
-function more (a) {
+var more = function more (a) {
     a + 1
 }
 
-function less(a) {
+var less = function less(a) {
     a - 1
 }
 
-function add(a, b) {
+var add = function add(a, b) {
     a  * b
 }
 
-function sub(a,b) {
+var sub = function sub(a,b) {
     a/b
 }
