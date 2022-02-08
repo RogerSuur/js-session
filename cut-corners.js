@@ -9,21 +9,39 @@
 // You may not use strings conversion to do it
 // No bitwise operator
 
-function round(input) {
-    for (let i = 0; i < input.length; i++) {
-        return i
+//console.log(round(3.2442352314))
+//console.log("trunc:", trunc(42.84)) //42
+//console.log("trunc", trunc(-0.123)) // -0
+//console.log("floor:", floor(42.84)) //42
+//console.log("floor:", floor(5.05)) //5
+//console.log("floor:", floor(-5.05)) //-6
+console.log("ceil", ceil(.95)); // 1
+console.log("ceil", ceil(4)); // 4
+console.log("ceil", ceil(7.004)); // 8
+console.log("ceil", ceil(-0.95)); // -0
+console.log("ceil", ceil(-4)); // -4
+console.log("ceil", ceil(-7.004)); // -7
+
+function round(num) {
+    var remainder = num % 1
+    if (remainder > 0.5) {
+    return remainder +1
     }
 };
 
-function ceil() {
-
+function ceil(num) {
+    if (num % 1 !== 0) {
+        return trunc(num) +1
+    } else {
+        num - num % 1 -1
+    }
 };
 
-function floor() {
-
+function floor(num) {
+    return (num > 0) ? num - num % 1 : num - num % 1 - 1
 };
 
-function trunc() {
-
+function trunc(num) {
+    return num - num % 1
 };
 
