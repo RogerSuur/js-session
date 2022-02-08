@@ -8,6 +8,7 @@
 
 //console.log(indexOf([1, 2, 3, 4, 5, 4, 3, 2, 1], 2));
 //console.log(indexOf([0, 0, t, t], t));
+//console.log(indexOf([5, 0, 0, 5], 5, 0));
 
 
 function indexOf(array, value, startIndex = 0) {
@@ -18,15 +19,14 @@ function indexOf(array, value, startIndex = 0) {
     //        found = value
     //    }
     //}
-    //console.log(startIndex)
     let i = startIndex;
     while ( i < array.length){
-        i++;
         if (array[i] === value) {
             //console.log(i, startIndex, array[i])
             found = i
             { break }
         }
+        i++;
     }
     return found
 };
