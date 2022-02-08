@@ -4,12 +4,14 @@
 //  Of course you may not use the method directly
 
 //console.log(repeat('ha',3));
+//console.log(repeat('a', 3));
 
 function repeat(a,b) {
-    var result = [];
+    var result = '';
     for (let index = 1; index <= b; index++) {
         //console.log(index)
-        result.push(a);
+        result= result + a;
     }
+    
     //console.log(result)
 };
