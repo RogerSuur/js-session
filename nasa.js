@@ -20,16 +20,14 @@ function nasa(N) {
 
     for (let i = 1; i <= N; i++) {
 
-        //if( i% 3 == 0 && i %5 == 0) {
-        //    answer += 'NASA'
-        //answer += '' : answer += ' '
-        //} 
-        if (i % 3 == 0) {
+        if( i% 3 == 0 && i %5 == 0) {
+            answer += 'NASA'
+        } else if (i % 3 == 0) {
             answer += 'NA'
-            answer += ' '
-        }
-        if (i % 5 == 0) {
+        } else if (i % 5 == 0) {
             answer += 'SA'
+        } else if (i % 3 == 0 && i % 5 == 0) {
+            answer += 'NASA'
         } else {
             answer += i
         }
@@ -38,7 +36,7 @@ function nasa(N) {
         }
     }
 
-return answer
+    return answer
 
 
 };
