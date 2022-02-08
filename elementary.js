@@ -9,6 +9,11 @@ console.log('yks negatiivne', modulo(-78, 34));
 console.log('teine negatiivne', modulo(78, -34));
 console.log('mõlemad negatiivsed', modulo(-78, -34));
 
+console.log('13', modulo(123, 22));
+console.log('13', modulo(123, -22));
+console.log('-13', modulo(-123, 22));
+console.log('-13', modulo(-123, -22));
+
 function multiply(num1, num2) {
     if (num1 === 0) {
         return 0;
@@ -66,13 +71,13 @@ function modulo(num1, num2) {
         }
     }
     if (num1 < 0 && num2 < 0) {
-        return result
+        return -result
     }
     if (num1 < 0) {
         return -result
     }
     if (num2 < 0) {
-        return -result
+        return result
     }
     return result;
 };
