@@ -51,7 +51,10 @@ function ceil(num) {
 };
 
 function floor(num) {
+    if (num === 0) { return 0 
+    } else {
     return (num > 0) ? trunc(num) : trunc(num) - 1
+    }
 };
 
 function trunc(num) {
