@@ -14,29 +14,31 @@ console.log(nasa(15)); // '1 2 NA 4 SA NA 7 8 NA SA 11 NA 13 14 NASA'))
 
 
 
-function nasa(N){
+function nasa(N) {
 
     var answer = ''
 
     for (let i = 1; i <= N; i++) {
 
-       //if( i% 3 == 0 && i %5 == 0) {
-       //    answer += 'NASA'
-       //answer += '' : answer += ' '
-       //} 
+        //if( i% 3 == 0 && i %5 == 0) {
+        //    answer += 'NASA'
+        //answer += '' : answer += ' '
+        //} 
         if (i % 3 == 0) {
             answer += 'NA'
             answer += ' '
-        } else if (i % 5 == 0) {
+        }
+        if (i % 5 == 0) {
             answer += 'SA'
-            answer += ' '
         } else {
-        answer += i
-        if (i !== N-1){
-            answer += ' '}
+            answer += i
+        }
+        if (i !== N) {
+            answer += ' '
         }
     }
-    return answer
+
+return answer
 
 
 };
