@@ -53,6 +53,9 @@ function divide(num1, num2) {
 };
 
 function modulo(num1, num2) {
+    if (Math.abs(num1) < Math.abs(num2)) {
+        return num1
+    }
     var counter = Math.abs(num2);
     var result = 0;
     var posNum1 = Math.abs(num1)
