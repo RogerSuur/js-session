@@ -6,7 +6,8 @@
 // but returns the index of the last occurence of a value
 // includes which returns true if the value was found in the array
 
-console.log(indexOf([1, 2, 3, 4, 5, 4, 3, 2, 1], 2));
+//console.log(indexOf([1, 2, 3, 4, 5, 4, 3, 2, 1], 2));
+console.log(indexOf([0, 0, t, t], t));
 
 
 function indexOf(array, value, startIndex = 0) {
@@ -17,12 +18,13 @@ function indexOf(array, value, startIndex = 0) {
     //        found = value
     //    }
     //}
+    //console.log(startIndex)
     let i = startIndex;
     while ( i < array.length){
-        console.log(i,array[i])
         i++;
         if (array[i] === value) {
-            found = value
+            //console.log(i, startIndex, array[i])
+            found = i
             { break }
         }
     }
