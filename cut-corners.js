@@ -24,6 +24,7 @@
 //console.log("ceil", ceil(-4)); // -4
 //console.log("ceil", ceil(-7.004)); // -7
 
+
 function round(num) {
     var remainder = num % 1
     console.log(remainder)
@@ -45,10 +46,13 @@ function round(num) {
 function ceil(num) {
     if (num === 0) { return 0 
     }
-    if (num % 1 !== 0) {
-        return trunc(num) + 1
+    if (num % 1 === 0) {
+        return num
+    } 
+    if (num>0) {
+       return trunc(num) +1
     } else {
-        num - num % 1 - 1
+        return trunc(num)
     }
 };
 
