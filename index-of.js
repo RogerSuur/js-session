@@ -12,7 +12,7 @@
 
 
 function indexOf(array, value, startIndex = 0) {
-    var found = ''
+    var found = -1
     //for (let i = 0; i < array.length; i++) {
     //    console.log(i, array[i])
     //    if (array[i] === value) {
