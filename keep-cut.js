@@ -23,11 +23,11 @@ function cutFirstLast(input){
 }
 
 function keepFirst(input){
-    return  input.slice(input.length)
+    return  input.slice(2, input.length)
 }
 
 function keepLast(input){
-    return  input.substring(2)
+    return  input.slice(0, -2)
 }
 
 function keepFirstLast(input){
