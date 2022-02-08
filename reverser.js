@@ -12,12 +12,12 @@ function reverse(input) {
         var answer = []
     }
 
-    for (let i = input.length; i >= 0; i--) {
+    for (let i = 0; i <= input.length; i++) {
         if (typeof input === "string") {
             console.log(i)
-            answer += input[i]
+            answer += input[input.length-i]
         } else {
-            answer.push(input[i])
+            answer.push(input[input.length-i])
         }
     }
     return answer
