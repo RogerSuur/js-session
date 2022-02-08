@@ -32,13 +32,13 @@ function slice(input, start = 0, end = 0) {
 
     for (let i = startAt; i < (endAt) ; i++) {
         if (typeof input === "string") {
-            console.log(i)
+            //console.log(i)
             answer += input[i]
         } else {
             answer.push(input[i])
         }
     }
     return answer
-    console.log(answer)
+    //console.log(answer)
 };
 
