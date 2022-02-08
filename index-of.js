@@ -54,8 +54,19 @@ function lastIndexOf(array, value, startIndex = 0) {
 
 };
 
-function includes() {
+function includes(array, value, startIndex = 0) {
+    var found = -1
 
+    let i = startIndex;
+    while (i < array.length) {
+        if (array[i] === value) {
+            found = i
+            { break }
+        }
+        i++;
+    }
+    if (found === 1) return true;
+    if (found === -1) return false;
 };
 
 
