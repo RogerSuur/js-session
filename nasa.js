@@ -18,7 +18,7 @@ function nasa(N){
 
     var answer = ''
 
-    for (let i = 0; i <= N; i++) {
+    for (let i = 1; i <= N; i++) {
 
         if( i% 3 == 0 && i %5 == 0) {
             answer += 'NASA'
