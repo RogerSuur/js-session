@@ -8,10 +8,7 @@
 
 function repeat(a,b) {
     var result = '';
-    for (let index = 1; index <= b; index++) {
-        //console.log(index)
+    for (let index = 1; index <= b; index++) {      
         result= result + a;
     }
-    
-    //console.log(result)
 };
