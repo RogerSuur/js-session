@@ -15,6 +15,8 @@
 //console.log("floor:", floor(42.84)) //42
 //console.log("floor:", floor(5.05)) //5
 //console.log("floor:", floor(-5.05)) //-6
+//console.log("floor:", floor(5)) // 5
+//console.log("floor:", floor(-1.05)) //-2
 //console.log("ceil", ceil(.95)); // 1
 //console.log("ceil", ceil(4)); // 4
 //console.log("ceil", ceil(7.004)); // 8
@@ -49,7 +51,7 @@ function ceil(num) {
 };
 
 function floor(num) {
-    return (num > 0) ? num - num % 1 : num - num % 1 - 1
+    return (num > 0) ? trunc(num) : trunc(num) - 1
 };
 
 function trunc(num) {
