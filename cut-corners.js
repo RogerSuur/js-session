@@ -43,6 +43,8 @@ function round(num) {
 };
 
 function ceil(num) {
+    if (num === 0) { return 0 
+    }
     if (num % 1 !== 0) {
         return trunc(num) + 1
     } else {
