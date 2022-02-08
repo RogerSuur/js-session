@@ -64,7 +64,7 @@ function includes(array, value, startIndex = 0) {
         }
         i++;
     }
-    (found === -1) ? false : true;
+    return (found === -1) ? false : true;
 };
 
 
