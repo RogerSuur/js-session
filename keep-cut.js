@@ -15,7 +15,7 @@ function cutFirst(input){
 }
 
 function cutLast(input){
-    return  input.slice(-2)
+    return  input.slice(0, -2)
 }
 
 function cutFirstLast(input){
@@ -27,9 +27,9 @@ function keepFirst(input){
 }
 
 function keepLast(input){
-    return  input.slice(0, -2)
+    return  input.slice(0, input.length-2)
 }
 
 function keepFirstLast(input){
-    return  input.substring(2)
+    return  input.substring(2, input.length-2)
 }
