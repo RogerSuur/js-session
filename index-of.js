@@ -7,7 +7,7 @@
 // includes which returns true if the value was found in the array
 
 //console.log(indexOf([1, 2, 3, 4, 5, 4, 3, 2, 1], 2));
-console.log(indexOf([0, 0, t, t], t));
+//console.log(indexOf([0, 0, t, t], t));
 
 
 function indexOf(array, value, startIndex = 0) {
