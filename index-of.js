@@ -17,7 +17,6 @@ function indexOf(array, value, startIndex = 0) {
     let i = startIndex;
     while (i < array.length) {
         if (array[i] === value) {
-            //console.log(i, startIndex, array[i])
             found = i
             { break }
         }
@@ -65,8 +64,7 @@ function includes(array, value, startIndex = 0) {
         }
         i++;
     }
-    if (found === 1) return true;
-    if (found === -1) return false;
+    (found === -1) ? false : true;
 };
 
 
