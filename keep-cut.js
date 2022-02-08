@@ -11,26 +11,25 @@
 // Create a keepFirstLast function that takes a string as parameter and only keep 2 first characters and 2 last characters.
 
 function cutFirst(input){
-    return str = input.slice(2)
+    return input.slice(2)
 }
 
 function cutLast(input){
-    return str = input.slice(-2)
+    return  input.slice(-2)
 }
 
 function cutFirstLast(input){
-    str = input.slice(2)
-    return str = input.slice(-2)
+    return  input.slice(-2, input.length)
 }
 
 function keepFirst(input){
-    return str = input.substring(2)
+    return  input.slice(input.length)
 }
 
 function keepLast(input){
-    return str = input.substring(2)
+    return  input.substring(2)
 }
 
 function keepFirstLast(input){
-    return str = input.substring(2)
+    return  input.substring(2)
 }
