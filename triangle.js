@@ -17,11 +17,15 @@
 
 function triangle(string, depth) {
     var counter = ''
-    for (let i = 0; i < depth; i++) {
+    var answer = ''
+    for (let i = 0; i <= depth; i++) {
         counter += string
+        
         if (i !== depth-1) {
-            counter += '\n'
+            answer += counter
+            answer += '\n'
         }
+        //answer += counter
     }
-    return counter
+    return answer
 };
