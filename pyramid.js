@@ -19,10 +19,10 @@ console.log(pyramid('a', 5));
 
 function pyramid(string, depth) {
     let n = depth;
-    var answer = "";
+    let answer = "";
     for (let i = 1; i <= n; i++) {
-        for (let j = 1; j <= n - 1; j++) {
-            answer += "$";
+        for (let j = 1; j <= n - i; j++) {
+            answer += " ";
         }
         for (let k = 0; k < 2 * i - 1; k++) {
             answer += string;
