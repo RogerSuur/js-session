@@ -27,7 +27,8 @@ function pyramid(string, depth) {
         for (let k = 0; k < 2 * i - 1; k++) {
             answer += string;
         }
-        answer += "\n"
+        if( i !== n) {
+            answer += "\n"}
     }
 return answer
 };
