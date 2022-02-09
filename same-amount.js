@@ -9,7 +9,7 @@
 //console.log(sameAmount(data, /i/, /p/))
 //console.log(sameAmount(`qqqqqqq q qqqqqqqfsqqqqq q qq  qw w wq wqw  wqw
 //ijnjjnfapsdbjnkfsdiqw klfsdjn fs fsdnjnkfsdjnk sfdjn fsp fd`, /h/, /w/))
-//console.log(sameAmount(data, /qqqq /, /qqqqqqq/))
+console.log(sameAmount(data, /qqqq /, /qqqqqqq/))
 //console.log(sameAmount(`qqqqqqq q qqqqqqqfsqqqqq q qq  qw w wq wqw  wqw
 //ijnjjnfapsdbjnkfsdiqw klfsdjn fs fsdnjnkfsdjnk sfdjn fsp fd`, /q /, /qqqqqqq/))
 //console.log(sameAmount(data, /fs[^q]/, /q /))
