@@ -12,4 +12,14 @@
 // is.truthy value is truthy
 // is.falsy value is falsy
 
-is.num = (n) => typeof n === 'number'
+is.num = (n) => typeof n === 'number';
+is.nan = (n) => typeof n === NaN;
+is.str = (n) => typeof n === 'string';
+is.bool = (n) => typeof n === boolean;
+is.undef = (n) => typeof n === undefined;
+is.def = (n) => typeof n === defined;
+is.arr = (n) => typeof n === Array;
+is.obj = (n) => typeof n === null;
+is.fun = (n) => typeof n === function;
+is.truthy = (n) => typeof n === truthy;
+is.falsy = (n) => typeof n=== falsy;
