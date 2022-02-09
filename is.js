@@ -20,6 +20,6 @@ is.undef = (n) => typeof n === undefined;
 is.def = (n) => typeof n === defined;
 is.arr = (n) => typeof n === Array;
 is.obj = (n) => typeof n === null;
-is.fun = (n) => typeof n === function;
+is.fun = (n) => typeof n === function(){};
 is.truthy = (n) => typeof n === truthy;
 is.falsy = (n) => typeof n=== falsy;
