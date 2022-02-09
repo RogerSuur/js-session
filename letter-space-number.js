@@ -2,11 +2,11 @@
 // followed by a space, followed by a number only if that number has only one digit and is not followed by any letter.
 
 
-//console.log(letterSpaceNumber('I like 7up.')); // []))
-//console.log(letterSpaceNumber("It's 20 past 3")); // ['t 3']))
-//console.log(letterSpaceNumber('example 1, example 2')); // ['e 1', 'e 2']))
-//console.log(letterSpaceNumber(''));// []))\
-//console.log(letterSpaceNumber('Definitely 9.'));// ['y 9']))
+console.log(letterSpaceNumber('I like 7up.')); // []))
+console.log(letterSpaceNumber("It's 20 past 3")); // ['t 3']))
+console.log(letterSpaceNumber('example 1, example 2')); // ['e 1', 'e 2']))
+console.log(letterSpaceNumber(''));// []))\
+console.log(letterSpaceNumber('Definitely 9.'));// ['y 9']))
 
 function letterSpaceNumber(inputString) {
 
@@ -15,8 +15,9 @@ function letterSpaceNumber(inputString) {
     var found = str.match(re);
     //console.log(found)
 
-    for (let i = 0; i < str.length; i++) {
-        const element = str[i];
+
+    if (found !== null){ return found
+    } else {
+        return []
     }
-    return found
 };
