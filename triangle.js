@@ -19,6 +19,6 @@ function triangle(string, depth) {
     var counter = ''
     for (let i = 0; i < depth; i++) {
         counter += string
-        console.log(counter)
+        return console.log(counter)
     }
 };
