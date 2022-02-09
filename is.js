@@ -13,7 +13,7 @@
 // is.falsy value is falsy
 
 is.num = (n) => typeof n === 'number';
-is.nan = (n) => typeof n === Number.isNaN(num);
+is.nan = (n) => typeof n === Number.isNaN(n);
 is.str = (n) => typeof n === 'string';
 is.bool = (n) => typeof n === boolean;
 is.undef = (n) => typeof n === undefined;
