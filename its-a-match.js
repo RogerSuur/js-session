@@ -15,4 +15,4 @@ const begin = /^hi/;
 
 const end = /hi$/;
 
-const beginEnd = /\bhi/;
+const beginEnd = /^hi$/;
