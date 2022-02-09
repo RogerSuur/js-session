@@ -6,9 +6,9 @@
 //console.log(sameAmount('hello how are you', /l/, /e/))
 //console.log(sameAmount('hello how are you', /h/, /e/))
 //console.log(sameAmount('hello how are you', /he/, /ho/))
-
 //console.log(sameAmount(data, /i/, /p/))
-//console.log(!sameAmount(data, /h/, /w/))
+console.log(sameAmount(`qqqqqqq q qqqqqqqfsqqqqq q qq  qw w wq wqw  wqw
+ijnjjnfapsdbjnkfsdiqw klfsdjn fs fsdnjnkfsdjnk sfdjn fsp fd`, /h/, /w/))
 //console.log(sameAmount(data, /qqqq /, /qqqqqqq/))
 //console.log(!sameAmount(data, /q /, /qqqqqqq/))
 //console.log(sameAmount(data, /fs[^q]/, /q /))
@@ -20,19 +20,19 @@
 function sameAmount(inputString, secondParam, thirdParam) {
     var re2 = secondParam;
     var re3 = thirdParam;
-    //console.log(re2)
+    console.log(re2)
 
     const str = inputString;
     
     var found2 = str.match(re2);
     var found3 = str.match(re3);
 
-    //console.log(found2)
-    //console.log(found3)
+    console.log(found2)
+    console.log(found3)
 
-    if (str.match(re2).length=== str.match(re3).length){
-        return true
-    } else if (str.match(re2)=== null || str.match(re3) === null) {
+    if (str.match(re2)=== null || str.match(re3) === null) {
         return false
-    }
+    } else if (str.match(re2).length=== str.match(re3).length) {
+        return false
+    } 
 };
