@@ -18,11 +18,11 @@ console.log(triangle('#', 4));
 function triangle(string, depth) {
     var counter = ''
     var answer = ''
-    for (let i = 0; i <= depth; i++) {
+    for (let i = 0; i < depth; i++) {
         counter += string
-        
-        if (i !== depth) {
-            answer += counter
+        answer += counter
+        if (i !== depth-1) {
+            
             answer += '\n'
         }
         //answer += counter
