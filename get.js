@@ -11,7 +11,7 @@
 
 //Tests
 // work with simple key / values
-console.log(get({ key: 'value' }, 'key')); // === 'value')
+//console.log(get({ key: 'value' }, 'key')); // === 'value')
 // work with nested objects
 //console.log(get({ nested: { key: 'value' }})); //'nested.key') === 'value')
 // return undefined without error if the value do not exist
