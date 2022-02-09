@@ -15,7 +15,6 @@ function ionOut(inputString) {
         return result
     }
     for (let i = 0; i < found.length; i++) {
-        //console.log(found[i])
         result.push(found[i].replace(cuttedPart, 't'))
     }
     return result
