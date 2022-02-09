@@ -15,7 +15,7 @@
 //// work with nested objects
 //console.log(get({ nested: { key: 'value' }})); //'nested.key') === 'value')
 //// return undefined without error if the value do not exist
-//console.log(get({ key: 'value' }, 'nx')); //=== undefined)
+console.log(get({ key: 'value' }, 'nx')); //=== undefined)
 //console.log(get({ nested: { key: 'value' } })); //, 'nested.nx') === undefined)
 //console.log(get({ nested: { key: 'value' } })); // 'nx.nx') === undefined)
 // work with nested arrays too
@@ -24,11 +24,10 @@
 
 function get(obj, path){    
    let pathArr = path.split('.')
-   let val = obj
-   
    pathArr.forEach((e) => {
-       if (val === undefined) return val  
-           val = val[e]
+       if (obj === undefined) return obj  
+           obj = obj[e]
     });
-   return val
+    console.log("obj:", obj)
+   return obj
 };
