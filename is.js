@@ -17,7 +17,7 @@ is.nan = (n) => typeof n === Number.isNaN(n);
 is.str = (n) => typeof n === 'string';
 is.bool = (n) => typeof n === boolean;
 is.undef = (n) => typeof n === undefined;
-is.def = (n) => typeof n === 'string';
+is.def = (n) => typeof n === !undefined;
 is.arr = (n) => typeof n === Array;
 is.obj = (n) => typeof n === null;
 is.fun = (n) => typeof n === function(){};
