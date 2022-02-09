@@ -8,8 +8,8 @@
 
 // beginEnd matches with the expression 'hi', only when it is exactly hi.
 
-
-var normal = 'hi'.match(regex);
+const nregex = /hi/;
+var normal = 'hi'.match(nregex);
 
 var begin = 'hi'.match(regex);
 
