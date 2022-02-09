@@ -29,7 +29,7 @@ function sameAmount(inputString, secondParam, thirdParam) {
     const found2 = str.match(re2);
     const found3 = str.match(re3);
 
-    if ((str.match(found2) != null && str.match(found3) != null) && (str.match(found2).length === str.match(found3).length)){
+    if ((found2 != null && found3 != null) && ((found2).length === (found3).length)){
         return true
     } else {
         return false
