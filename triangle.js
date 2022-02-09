@@ -11,7 +11,7 @@
 // ****
 // *****
 // No new line in last line
-//console.log(triangle('#', 4));
+console.log(triangle('#', 4));
 //(triangle('a', 5));
 //(triangle('+', 10));
 
@@ -21,7 +21,7 @@ function triangle(string, depth) {
     for (let i = 0; i <= depth; i++) {
         counter += string
         
-        if (i !== depth-1) {
+        if (i !== depth) {
             answer += counter
             answer += '\n'
         }
