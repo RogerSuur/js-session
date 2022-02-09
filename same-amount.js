@@ -10,29 +10,28 @@
 //console.log(sameAmount(`qqqqqqq q qqqqqqqfsqqqqq q qq  qw w wq wqw  wqw
 //ijnjjnfapsdbjnkfsdiqw klfsdjn fs fsdnjnkfsdjnk sfdjn fsp fd`, /h/, /w/))
 //console.log(sameAmount(data, /qqqq /, /qqqqqqq/))
-//console.log(!sameAmount(data, /q /, /qqqqqqq/))
+//console.log(sameAmount(`qqqqqqq q qqqqqqqfsqqqqq q qq  qw w wq wqw  wqw
+//ijnjjnfapsdbjnkfsdiqw klfsdjn fs fsdnjnkfsdjnk sfdjn fsp fd`, /q /, /qqqqqqq/))
 //console.log(sameAmount(data, /fs[^q]/, /q /))
 //console.log(sameAmount(data, /^[qs]/, /^[gq]/))
 //console.log(sameAmount(data, /j/, /w/))
 //console.log(!sameAmount(data, /j/, / /))
 //console.log(sameAmount(data, /fs./, /jn./))
 
+
 function sameAmount(inputString, secondParam, thirdParam) {
-    var re2 = secondParam;
-    var re3 = thirdParam;
-   // console.log(re2)
+    const re2 = new RegExp(secondParam, 'g');
+    const re3 = new RegExp(thirdParam, 'g');
+   
 
     const str = inputString;
     
-    var found2 = str.match(re2);
-    var found3 = str.match(re3);
+    const found2 = str.match(re2);
+    const found3 = str.match(re3);
 
-   // console.log(found2)
-   // console.log(found3)
-
-    if (str.match(re2)=== null || str.match(re3) === null) {
-        return false
-    } else if (str.match(re2).length=== str.match(re3).length) {
+    if ((str.match(found2) != null && str.match(found3) != null) && (str.match(found2).length === str.match(found3).length)){
         return true
+    } else {
+        return false
     } 
 };
