@@ -18,19 +18,16 @@ console.log(pyramid('a', 5));
 //console.log(pyramid('#', 40));
 
 function pyramid(string, depth) {
-    var counter = ''
-    var answer = ''
-    var space = ' ' 
-    for (let i = 1; i <= depth; i++) {
-        counter += space.repeat(depth-1)
-        counter += string.repeat(i+1)
-        answer += counter
-        counter = ''
-        if (i !== depth) {
-            
-            answer += '\n'
+    let n = depth
+    var answer = '';
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= n - 1; j++) {
+            answer += " "
         }
-        //answer += counter
+        for (let k = 0; k < 2 * i - 1; k++) {
+            answer += string;
+        }
+        answer += '\n'
     }
-    return answer
+return answer
 };
