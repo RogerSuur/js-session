@@ -1,4 +1,4 @@
-// Create 4 regular expression in variables:
+// Create 4 regular expression in constiables:
 
 // normal matches with the expression 'hi'.
 
@@ -11,8 +11,8 @@
 
 const normal = /hi/;
 
-var begin = 'hi'.match(regex);
+const begin = /^hi/;
 
-var end ='hi'.match(regex);
+const end = /hi$/;
 
-var beginEnd ='hi'.match(regex);
+const beginEnd = /(hi)/;
