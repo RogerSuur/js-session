@@ -23,8 +23,7 @@ function pyramid(string, depth) {
     var space = ' ' 
     for (let i = 1; i <= depth; i++) {
         counter += space.repeat(depth-1)
-        counter += string.repeat(i)
-        counter += space
+        counter += string.repeat(i+1)
         answer += counter
         counter = ''
         if (i !== depth) {
