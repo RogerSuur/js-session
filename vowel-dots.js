@@ -7,9 +7,11 @@
 //console.log(vowelDots('rhythm'));//, 'rhythm'))
 //console.log(vowelDots('Algorithm'));//, 'A.lgo.ri.thm'))
 
+var vowels = /[AEIOUaeiou]/g;
+
 function vowelDots(inputString){
    var str = inputString;
-   var vowels = /[AEIOUaeiou]/g;
+   
    // var found = str.match(re);
    // console.log(found)
    const answer = (str.replace(vowels, '$&.'))
