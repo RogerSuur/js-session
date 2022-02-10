@@ -16,7 +16,7 @@
 //console.log(isValid(new Date('1995-12-17T03:24:00')))
 
 function isValid(input){
-    if ((!isNaN(new Date(input))) && (new Date(input) !== 0)) {
+    if ((isNaN(new Date(input))) && (new Date(input) !== 0)) {
         return true
     } else {
         return false
@@ -30,8 +30,10 @@ function isAfter(date1, date2){
 
 };
 
-function isBefore(){
-
+function isBefore(date1, date2){
+    if ( date1<date2) {
+        return true
+    }
 };
 
 function isFuture(){
