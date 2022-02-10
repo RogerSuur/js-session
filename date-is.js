@@ -22,10 +22,8 @@ console.log(isFuture(new Date(2077, 11, 31)))
 console.log(isFuture(new Date(Date.now() + 1)))
 
 function isValid(input){
-    if (!isNaN(new Date(input)) && (new Date( input))) {
+    if (!isNaN(input) && ( input)) {
         return true
-    } else {
-        return false
     }
 };
 
@@ -44,9 +42,13 @@ function isBefore(date1, date2){
 
 function isFuture(inputDate){
     let today = new Date()
-    //console.log(today)
-    if (isValid(inputDate)>today){
-        return true
+    
+    if (isValid(inputDate)){
+        if (inputDate>today){
+            return true
+        } else {
+        return      false
+        }
     }
 };
 
