@@ -17,6 +17,11 @@
 //console.log(isFuture(new Date(2077, 11, 31)))
 //console.log(!invalid(isFuture))
 
+console.log(!isPast(new Date(Date.now() + 1)))
+console.log(!isPast(new Date(2077, 11, 31)))
+console.log(isPast(new Date(1442, 11, 31)))
+console.log(isPast(new Date(Date.now() - 1)))
+
 function isValid(input){
     if (!isNaN(input) && ( input)) {
         return true
@@ -48,7 +53,7 @@ function isFuture(inputDate){
     }
 };
 
-function isPast(){
+function isPast(inputDate){
     let today = new Date()
     
     if (isValid(inputDate)){
