@@ -36,8 +36,11 @@ function isBefore(date1, date2){
     }
 };
 
-function isFuture(){
-
+function isFuture(inputDate){
+    let today = new Date().toISOString().slice(0, 10)
+    if (isValid(inputDate)>today){
+        return true
+    }
 };
 
 function isPast(){
