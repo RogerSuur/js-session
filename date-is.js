@@ -37,7 +37,7 @@ function isBefore(date1, date2){
 };
 
 function isFuture(inputDate){
-    let today = new Date().toISOString().slice(0, 10)
+    let today = new Date()
     if (isValid(inputDate)>today){
         return true
     }
