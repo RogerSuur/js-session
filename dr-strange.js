@@ -56,12 +56,12 @@
 //console.log(addWeek(new Date('2020-01-01'))) //=== 'Wednesday')
 //console.log(addWeek(new Date('2048-12-07'))) //=== 'Monday')
 
-console.log (timeTravel({
-      date: new Date('2020-05-29 23:25:22'),
-      hour: 21,
-      minute: 22,
-      second: 22,
-    }))
+//console.log (timeTravel({
+//      date: new Date('2020-05-29 23:25:22'),
+//      hour: 21,
+//      minute: 22,
+//      second: 22,
+//    }))
 
 // t(({ eq }) =>
 //   eq(
