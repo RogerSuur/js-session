@@ -14,7 +14,7 @@
 //console.log(isValid(new Date(1488370835081)))
 //console.log(isValid(new Date('1995-12-17T03:24:00')))
 //console.log(isValid(new Date('1995-12-17T03:24:00')))
-console.log(isFuture(new Date(2077, 11, 31)))
+//console.log(isFuture(new Date(2077, 11, 31)))
 //console.log(!invalid(isFuture))
 console.log(!isFuture(new Date('1992-01-01')))
 console.log(!isFuture(new Date(Date.now() - 1)))
@@ -22,7 +22,7 @@ console.log(isFuture(new Date(2077, 11, 31)))
 console.log(isFuture(new Date(Date.now() + 1)))
 
 function isValid(input){
-    if ((!isNaN(input)) && (input)) {
+    if (!isNaN(new Date(input)) && (new Date( input))) {
         return true
     } else {
         return false
