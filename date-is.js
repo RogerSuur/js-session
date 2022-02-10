@@ -23,7 +23,10 @@ function isValid(input){
     }
 };
 
-function isAfter(){
+function isAfter(date1, date2){
+    if ( date1>date2) {
+        return true
+    }
 
 };
 
