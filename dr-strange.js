@@ -56,14 +56,80 @@
 //console.log(addWeek(new Date('2020-01-01'))) //=== 'Wednesday')
 //console.log(addWeek(new Date('2048-12-07'))) //=== 'Monday')
 
+console.log (timeTravel({
+      date: new Date('2020-05-29 23:25:22'),
+      hour: 21,
+      minute: 22,
+      second: 22,
+    }))
+
+// t(({ eq }) =>
+//   eq(
+//     timeTravel({
+//       date: new Date('2000-05-09 01:28:02'),
+//       hour: 21,
+//       minute: 22,
+//       second: 22,
+//     }).getTime(),
+//     new Date('2000-05-09 21:22:22').getTime(),
+//   ),
+// )
+
+// t(({ eq }) =>
+//   eq(
+//     timeTravel({
+//       date: new Date('2018-06-04 13:01:00'),
+//       hour: 10,
+//       minute: 16,
+//       second: 11,
+//     }).getTime(),
+//     new Date('2018-06-04 10:16:11').getTime(),
+//   ),
+// )
+
+// t(({ eq }) =>
+//   eq(
+//     timeTravel({
+//       date: new Date('1995-11-07 00:21:12'),
+//       hour: 23,
+//       minute: 12,
+//       second: 18,
+//     }).getTime(),
+//     new Date('1995-11-07 23:12:18').getTime(),
+//   ),
+// )
+
+// t(({ eq }) =>
+//   eq(
+//     timeTravel({
+//       date: new Date('1000-09-19 06:00:00'),
+//       hour: 22,
+//       minute: 10,
+//       second: 21,
+//     }).getTime(),
+//     new Date('1000-09-19 22:10:21').getTime(),
+//   ),
+// )
+
+// t(({ eq }) =>
+//   eq(
+//     timeTravel({
+//       date: new Date('1975-05-10 10:07:56'),
+//       hour: 17,
+//       minute: 15,
+//       second: 14,
+//     }).getTime(),
+//     new Date('1975-05-10 17:15:14').getTime(),
+//   ),
+// )
 
 
-function addWeek(date){
+function addWeek(date) {
 
-    let newWeekFormat =[
+    let newWeekFormat = [
         'Monday',
         'Tuesday',
-       'Wednesday',
+        'Wednesday',
         'Thursday',
         'Friday',
         'Saturday',
@@ -77,16 +143,29 @@ function addWeek(date){
         'secondSunday',
     ];
 
-    let weekDay = ''
+    let daysFrom = ''
     const startDate = new Date('0001-01-01')
-    
-   let wantedDate = new Date(date)
 
-   weekDay = (startDate-wantedDate)/(1000*60*60*24)
+    let wantedDate = new Date(date)
+
+    daysFrom = (startDate - wantedDate) / (1000 * 60 * 60 * 24)
+    //console.log("daysFrom:", daysFrom)
 
 
-    var modulus = Math.abs(weekDay%14)
+    var modulus = Math.abs(daysFrom % 14)
 
     //console.log("modulus:", modulus)
     return newWeekFormat[modulus]
 }
+
+function timeTravel ({date, hour, minute, second}) {
+    //console.log("obj.date:",obj.date)
+    //console.log("obj.hour:", obj.hour)
+    //var timeTraveledDate = new Date(obj.date);
+
+    date.setHours(hour)
+    date.setMinutes(minute)
+    date.setSeconds(second)
+    //console.log("obj.date:", date)
+    return date
+};
