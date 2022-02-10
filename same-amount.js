@@ -9,8 +9,8 @@
 //console.log(sameAmount(data, /i/, /p/))
 //console.log(sameAmount(`qqqqqqq q qqqqqqqfsqqqqq q qq  qw w wq wqw  wqw
 //ijnjjnfapsdbjnkfsdiqw klfsdjn fs fsdnjnkfsdjnk sfdjn fsp fd`, /h/, /w/))
-console.log(sameAmount(data, /qqqq /, /qqqqqqq/))
-//console.log(sameAmount(`qqqqqqq q qqqqqqqfsqqqqq q qq  qw w wq wqw  wqw
+//console.log(sameAmount(data, /qqqq /, /qqqqqqq/))
+console.log(sameAmount(`qqqqqqq q qqqqqqqfsqqqqq q qq  qw w wq wqw  wqw
 //ijnjjnfapsdbjnkfsdiqw klfsdjn fs fsdnjnkfsdjnk sfdjn fsp fd`, /q /, /qqqqqqq/))
 //console.log(sameAmount(data, /fs[^q]/, /q /))
 //console.log(sameAmount(data, /^[qs]/, /^[gq]/))
@@ -24,7 +24,7 @@ function sameAmount(inputString, secondParam, thirdParam) {
     const re3 = new RegExp(thirdParam, 'g');
    
 
-    const str = inputString;
+    const str = inputString || '';//juhul kui esimene on undefined siis määra ''
     
     const found2 = str.match(re2);
     const found3 = str.match(re3);
