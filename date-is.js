@@ -10,10 +10,10 @@
 // isPast, will return true if the date given as parameter is valid 
 // and less than the present date
 
-console.log(isValid(new Date('December 17, 1995 03:24:00')))
-console.log(isValid(new Date(1488370835081)))
-console.log(isValid(new Date('1995-12-17T03:24:00')))
-console.log(isValid(new Date('1995-12-17T03:24:00')))
+//console.log(isValid(new Date('December 17, 1995 03:24:00')))
+//console.log(isValid(new Date(1488370835081)))
+//console.log(isValid(new Date('1995-12-17T03:24:00')))
+//console.log(isValid(new Date('1995-12-17T03:24:00')))
 
 function isValid(input){
     return (!isNaN(new Date(input))) && (new Date(input) !== 0) 
