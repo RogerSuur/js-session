@@ -27,14 +27,14 @@
 
 // isLastDayOfMonth
 console.log(isLastDayOfMonth(new Date('2020-02-29')));
-console.log(isLastDayOfMonth(new Date('2020-12-31')));
-console.log(isLastDayOfMonth(new Date('2019-02-28')));
-console.log(isLastDayOfMonth(new Date('1998-02-28')));
-console.log(isLastDayOfMonth(new Date('1980-02-29')));
-console.log(!isLastDayOfMonth(new Date('2020-12-30')));
-console.log(!isLastDayOfMonth(new Date('2020-02-28')));
-console.log(!isLastDayOfMonth(new Date('2019-02-29')));
-
+//console.log(isLastDayOfMonth(new Date('2020-12-31')));
+//console.log(isLastDayOfMonth(new Date('2019-02-28')));
+//console.log(isLastDayOfMonth(new Date('1998-02-28')));
+//console.log(isLastDayOfMonth(new Date('1980-02-29')));
+//console.log(!isLastDayOfMonth(new Date('2020-12-30')));
+//console.log(!isLastDayOfMonth(new Date('2020-02-28')));
+//console.log(!isLastDayOfMonth(new Date('2019-02-29')));
+//
 function isFriday(date){
     //console.log("DATE:",date)
     let day = date.getDay();
@@ -70,8 +70,13 @@ console.log("yEAR:",year)
 };
 
 function isLastDayOfMonth(date){
+    //console.log("date:", date)
     var today = new Date();
+    //console.log("today:", today)
     var lastDayOfMonth = new Date(today.getFullYear(), today.getMonth()+1, 0);
-    console.log(lastDayOfMonth)
+    //console.log("lastday:",lastDayOfMonth)
+    if (date === lastDayOfMonth){
+        return true
+    }
     return false
 };
