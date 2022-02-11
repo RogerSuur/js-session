@@ -73,4 +73,5 @@ function isLastDayOfMonth(date){
     var today = new Date();
     var lastDayOfMonth = new Date(today.getFullYear(), today.getMonth()+1, 0);
     console.log(lastDayOfMonth)
+    return false
 };
