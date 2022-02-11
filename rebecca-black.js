@@ -13,17 +13,17 @@
 //console.log(!isFriday(new Date('2000-08-26')));
 
 // isWeekend
-console.log(isWeekend(new Date('2014-09-06')));
-console.log(isWeekend(new Date('2020-05-30')));
-console.log(!isWeekend(new Date('1929-02-13')));
-console.log(!isWeekend(new Date('1990-01-30')));
+//console.log(isWeekend(new Date('2014-09-06')));
+//console.log(isWeekend(new Date('2020-05-30')));
+//console.log(!isWeekend(new Date('1929-02-13')));
+//console.log(!isWeekend(new Date('1990-01-30')));
 
 // isLeapYear
-//console.log(isLeapYear(new Date('1804-02-01')));
-//console.log(isLeapYear(new Date('2008-02-01')));
-//console.log(isLeapYear(new Date('2216-02-01')));
-//console.log(!isLeapYear(new Date('1993-02-01')));
-//console.log(!isLeapYear(new Date('1999-02-01')));
+console.log(isLeapYear(new Date('1804-02-01')));
+console.log(isLeapYear(new Date('2008-02-01')));
+console.log(isLeapYear(new Date('2216-02-01')));
+console.log(!isLeapYear(new Date('1993-02-01')));
+console.log(!isLeapYear(new Date('1999-02-01')));
 
 // isLastDayOfMonth
 //console.log(isLastDayOfMonth(new Date('2020-02-29')));
@@ -56,7 +56,17 @@ function isWeekend(date){
 };
 
 function isLeapYear(date){
+let year = date.getFullYear();
+console.log("yEAR:",year)
+    if (year%4 === 0 && year%100 !== 0){
+        return true
+    } else {
+        return false
+    }
+//     A year is leap year if following conditions are satisfied:
 
+// Year is multiple of 400.
+// Year is multiple of 4 and not multiple of 100.
 };
 
 function isLastDayOfMonth(date){
