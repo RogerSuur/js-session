@@ -37,11 +37,11 @@ console.log( !isFriday(new Date('2000-08-26')));
 
 function isFriday(date){
     let day = date.getDay();
-    //console.log("day:", day)
+    console.log("day:", day)
     if (day === '5') {
-    return false
+        return
     } else {
-        return true
+        return false
     }
 };
 
