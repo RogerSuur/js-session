@@ -80,8 +80,8 @@ function isLastDayOfMonth(date){
     //return test.getMonth() !== month;
 
     if (test === date) {
-        return true
-    } else return false
+        return false
+    } else return true
     // console.log("date:", date)
     // var today = new Date();
     // //console.log("today:", today)
