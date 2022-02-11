@@ -39,7 +39,7 @@ function isFriday(date){
     //console.log("DATE:",date)
     let day = date.getDay();
     //console.log("DAY:",day)
-    if (day === 6 || day === 7){
+    if (day === 5){
         return true
     } else {
         return false
@@ -47,10 +47,8 @@ function isFriday(date){
 };
 
 function isWeekend(date){
-    console.log("DATE:",date)
     let day = date.getDay();
-    console.log("DAY:",day)
-    if (day === 5){
+    if (day === 6 || day === 7){
         return true
     } else {
         return false
