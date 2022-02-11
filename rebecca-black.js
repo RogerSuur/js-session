@@ -79,7 +79,7 @@ function isLastDayOfMonth(date){
     test.setDate(test.getDate() + 1);
     //return test.getMonth() !== month;
 
-    if (test !== date) {
+    if (test === date) {
         console.log("siin")
         return false
     } else return true
