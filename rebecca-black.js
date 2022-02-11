@@ -7,10 +7,10 @@
 // isLastDayOfMonth returns true if the date is the last day of the month
 
 // isFriday
-console.log( isFriday(new Date('2014-08-29')));
-console.log( isFriday(new Date('2020-07-17')));
-console.log( !isFriday(new Date('1992-08-26')));
-console.log( !isFriday(new Date('2000-08-26')));
+console.log(isFriday(new Date('2014-08-29')));
+console.log(isFriday(new Date('2020-07-17')));
+console.log(!isFriday(new Date('1992-08-26')));
+console.log(!isFriday(new Date('2000-08-26')));
 
 // isWeekend
 //console.log(isWeekend(new Date('2014-09-06')));
@@ -36,19 +36,17 @@ console.log( !isFriday(new Date('2000-08-26')));
 //console.log(!isLastDayOfMonth(new Date('2019-02-29')));
 
 function isFriday(date){
+    console.log("DATE:",date)
     let day = date.getDay();
-    console.log("day:", day)
-    if (day === '5') {
-        return
+    console.log("DAY:",day)
+    if (day === 5){
+        return true
     } else {
         return false
     }
 };
 
 function isWeekend(date){
-    let day = date.getDay();
-    if (day !== false)
-    return true
 };
 
 function isLeapYear(date){
