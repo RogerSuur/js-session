@@ -70,14 +70,26 @@ console.log("yEAR:",year)
 };
 
 function isLastDayOfMonth(date){
-    console.log("date:", date)
-    var today = new Date();
-    //console.log("today:", today)
-    var lastDayOfMonth = new Date(today.getFullYear(), today.getMonth()+1, 0);
-    console.log("lastday:",lastDayOfMonth)
-    if (date === lastDayOfMonth){
-        console.log("siia")
-        return false
-    }
-    return false
+
+    var test = new Date(date.getTime()),
+        month = test.getMonth();
+
+        console.log(test)
+
+    test.setDate(test.getDate() + 1);
+    //return test.getMonth() !== month;
+
+    if (test === date) {
+        return true
+    } else return false
+    // console.log("date:", date)
+    // var today = new Date();
+    // //console.log("today:", today)
+    // var lastDayOfMonth = new Date(today.getFullYear(), today.getMonth()+1, 0);
+    // console.log("lastday:",lastDayOfMonth)
+    // if (date === lastDayOfMonth){
+    //     console.log("siia")
+    //     return false
+    // }
+    // return false
 };
