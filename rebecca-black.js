@@ -70,13 +70,13 @@ console.log("yEAR:",year)
 };
 
 function isLastDayOfMonth(date){
-    //console.log("date:", date)
+    console.log("date:", date)
     var today = new Date();
     //console.log("today:", today)
     var lastDayOfMonth = new Date(today.getFullYear(), today.getMonth()+1, 0);
-    //console.log("lastday:",lastDayOfMonth)
+    console.log("lastday:",lastDayOfMonth)
     if (date === lastDayOfMonth){
-        return true
+        return false
     }
-    return false
+    return true
 };
