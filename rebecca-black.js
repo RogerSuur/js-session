@@ -26,14 +26,14 @@
 //console.log(!isLeapYear(new Date('1999-02-01')));
 
 // isLastDayOfMonth
-console.log(isLastDayOfMonth(new Date('2020-02-29')));
-console.log(isLastDayOfMonth(new Date('2020-12-31')));
-console.log(isLastDayOfMonth(new Date('2019-02-28')));
-console.log(isLastDayOfMonth(new Date('1998-02-28')));
-console.log(isLastDayOfMonth(new Date('1980-02-29')));
+//console.log(isLastDayOfMonth(new Date('2020-02-29')));
+//console.log(isLastDayOfMonth(new Date('2020-12-31')));
+//console.log(isLastDayOfMonth(new Date('2019-02-28')));
+//console.log(isLastDayOfMonth(new Date('1998-02-28')));
+//console.log(isLastDayOfMonth(new Date('1980-02-29')));
 console.log(!isLastDayOfMonth(new Date('2020-12-30')));
-console.log(!isLastDayOfMonth(new Date('2020-02-28')));
-console.log(!isLastDayOfMonth(new Date('2019-02-29')));
+//console.log(!isLastDayOfMonth(new Date('2020-02-28')));
+//console.log(!isLastDayOfMonth(new Date('2019-02-29')));
 //
 function isFriday(date){
     //console.log("DATE:",date)
@@ -70,27 +70,27 @@ console.log("yEAR:",year)
 };
 
 function isLastDayOfMonth(date){
+    console.log("date:", date)
 
     var test = new Date(date.getTime()),
         month = test.getMonth();
 
-        console.log(test)
+        console.log("test:", test)
 
     test.setDate(test.getDate() + 1);
     //return test.getMonth() !== month;
+    console.log("test after:", test)
 
-    if (test === date) {
-        console.log("siin")
+    console.log("test.getmonth:", test.getMonth())
+        console.log("month:", month)
+
+    if (test.getMonth() !== month) {
+        console.log("siia")
+        //console.log("test.getmonth:", test.getMonth())
+        //console.log("month:", month)
+        return true
+    } else {
+        console.log("else")
         return false
-    } else return true
-    // console.log("date:", date)
-    // var today = new Date();
-    // //console.log("today:", today)
-    // var lastDayOfMonth = new Date(today.getFullYear(), today.getMonth()+1, 0);
-    // console.log("lastday:",lastDayOfMonth)
-    // if (date === lastDayOfMonth){
-    //     console.log("siia")
-    //     return false
-    // }
-    // return false
+    }
 };
