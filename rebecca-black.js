@@ -19,21 +19,21 @@
 //console.log(!isWeekend(new Date('1990-01-30')));
 
 // isLeapYear
-console.log(isLeapYear(new Date('1804-02-01')));
-console.log(isLeapYear(new Date('2008-02-01')));
-console.log(isLeapYear(new Date('2216-02-01')));
-console.log(!isLeapYear(new Date('1993-02-01')));
-console.log(!isLeapYear(new Date('1999-02-01')));
+//console.log(isLeapYear(new Date('1804-02-01')));
+//console.log(isLeapYear(new Date('2008-02-01')));
+//console.log(isLeapYear(new Date('2216-02-01')));
+//console.log(!isLeapYear(new Date('1993-02-01')));
+//console.log(!isLeapYear(new Date('1999-02-01')));
 
 // isLastDayOfMonth
-//console.log(isLastDayOfMonth(new Date('2020-02-29')));
-//console.log(isLastDayOfMonth(new Date('2020-12-31')));
-//console.log(isLastDayOfMonth(new Date('2019-02-28')));
-//console.log(isLastDayOfMonth(new Date('1998-02-28')));
-//console.log(isLastDayOfMonth(new Date('1980-02-29')));
-//console.log(!isLastDayOfMonth(new Date('2020-12-30')));
-//console.log(!isLastDayOfMonth(new Date('2020-02-28')));
-//console.log(!isLastDayOfMonth(new Date('2019-02-29')));
+console.log(isLastDayOfMonth(new Date('2020-02-29')));
+console.log(isLastDayOfMonth(new Date('2020-12-31')));
+console.log(isLastDayOfMonth(new Date('2019-02-28')));
+console.log(isLastDayOfMonth(new Date('1998-02-28')));
+console.log(isLastDayOfMonth(new Date('1980-02-29')));
+console.log(!isLastDayOfMonth(new Date('2020-12-30')));
+console.log(!isLastDayOfMonth(new Date('2020-02-28')));
+console.log(!isLastDayOfMonth(new Date('2019-02-29')));
 
 function isFriday(date){
     //console.log("DATE:",date)
@@ -70,5 +70,7 @@ console.log("yEAR:",year)
 };
 
 function isLastDayOfMonth(date){
-
+    var today = new Date();
+    var lastDayOfMonth = new Date(today.getFullYear(), today.getMonth()+1, 0);
+    console.log(lastDayOfMonth)
 };
