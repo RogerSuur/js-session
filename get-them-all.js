@@ -41,10 +41,10 @@ export function getClassical() {
 
 export function getActive() {
 
-    var fullClassicalArchitects = document.getElementsByClassName('classical active')
-    var fullOtherArchitects = document.querySelectorAll('a:not(.classical )')
+    var activeClassicalArchitects = document.getElementsByClassName('classical active')
+    var nonActiveClassicalArchitects = document.querySelectorAll('a:not(.classical )')
     
-    return [Array.from(fullClassicalArchitects), Array.from(fullOtherArchitects)]
+    return [Array.from(activeClassicalArchitects), Array.from(nonActiveClassicalArchitects)]
 
 };
 
