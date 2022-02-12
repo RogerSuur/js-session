@@ -41,13 +41,19 @@ export function getClassical() {
 
 export function getActive() {
 
-    var activeClassicalArchitects = document.getElementsByClassName('classical active')
-    var nonActiveClassicalArchitects = document.querySelectorAll('a:not(.classical )')
+    var activeClassicalArchitects = document.getElementsByClassName('classical active');
+    var nonActiveClassicalArchitects = document.querySelectorAll('a.classical:not(.active)');
     
     return [Array.from(activeClassicalArchitects), Array.from(nonActiveClassicalArchitects)]
 
 };
 
 export function getBonannoPisano() {
+
+    var architectBonannoPisano = document.getElementById('BonannoPisano');
+    //var nonBonannoPisano = document.querySelectorAll('id:not(.BonannoPisano)');
+    
+    return [Array.from(architectBonannoPisano)]//, //Array.from(nonBonannoPisano)]
+
 
 };
