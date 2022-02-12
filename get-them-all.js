@@ -22,32 +22,32 @@
 // the HTML element of the architect you're looking for, whose id is BonannoPisano
 // an array which contains all the remaining HTML elements of active classical architects -->
 
-export function getArchitects(){
+export function getArchitects() {
     var fullArchitects = document.getElementsByTagName('a')
     var nonArchitects = document.getElementsByTagName('span')
 
-  return [Array.from(fullArchitects),Array.from(nonArchitects)] 
+    return [Array.from(fullArchitects), Array.from(nonArchitects)]
 
 };
 
-export function getClassical(){
-    var fullClassicalArchitects = document.getElementsByTagName('a').getElementsByClassName('classical')
-    //var fullOtherArchitects = document.querySelectorAll('modern', 'baroque')
-    var fullOtherArchitects = document.getElementsByTagName('a').querySelectorAll('modern', 'baroque')
+export function getClassical() {
+    var fullClassicalArchitects = document.getElementsByClassName('classical');
+    var nonOtherArchitects = document.querySelectorAll('a:not(.classical)');
+    //var fullOtherArchitects = document.getElementsByClassName('modern', 'baroque', 'baroque active', 'modern active')
     //fullOtherArchitects = document.querySelectorAll('baroque')
 
-    return [Array.from(fullClassicalArchitects),Array.from(fullOtherArchitects)] 
+    return [Array.from(fullClassicalArchitects), Array.from(nonOtherArchitects)]
 };
 
-export function getActive(){
+export function getActive() {
 
-    //var fullClassicalArchitects = document.getElementsByTagName('a').getElementsByClassName('classical')
-    //var fullOtherArchitects = document.getElementsByTagName('a').getElementsByClassName('modern')
+    var fullClassicalArchitects = document.getElementsByClassName('classical active')
+    var fullOtherArchitects = document.querySelectorAll('a:not(.classical )')
     
-    //return [Array.from(fullClassicalArchitects),Array.from(fullOtherArchitects)] 
+    return [Array.from(fullClassicalArchitects), Array.from(fullOtherArchitects)]
 
 };
 
-export function getBonannoPisano(){
+export function getBonannoPisano() {
 
 };
