@@ -13,13 +13,13 @@ function dayOfTheYear(inputDate){
     // const monthOfTheYear = (inputDate.getMonth() + 1);
     // const dayOfTheWeek = inputDate.getDay()
     let daysFrom = ''
-    console.log("inputDate:", inputDate)
+    //console.log("inputDate:", inputDate)
     const inputYear = inputDate.getUTCFullYear()
-    console.log("inputYear:", inputYear)
+    //console.log("inputYear:", inputYear)
     const startingYear = new Date(inputYear)
-    console.log("startingYear", startingYear)
+    //console.log("startingYear", startingYear)
     startingYear.setFullYear(inputYear)
-    console.log("startingYear:", startingYear)
+    //console.log("startingYear:", startingYear)
 
    // let wantedDate = new Date(inputDate)
 //
