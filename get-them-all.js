@@ -51,7 +51,7 @@ export function getActive() {
 export function getBonannoPisano() {
 
     var architectBonannoPisano = document.getElementById('BonannoPisano');
-    var nonBonannoPisano = document.querySelectorAll('classical active');
+    var nonBonannoPisano = document.getElementsByClassName('classical active');
     
     return [(architectBonannoPisano), Array.from(nonBonannoPisano)]
 
