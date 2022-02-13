@@ -11,11 +11,11 @@ export function generateLetters(){
             element.style.fontSize= i+10+'px';
             
             // font-weight has to be 300 for the first third of the letters, 400 for the second third, and 600 for the last third
-            if(i<=40){
+            if(i<40){
                 element.style.fontWeight = '300';
-            } else if (80>=i>40) {
+            } else if (80>i>=40) {
                 element.style.fontWeight = '400';
-            } else if ( i>80) {
+            } else if ( i>=80) {
                 element.style.fontWeight = '600';
             }
         }
