@@ -11,18 +11,18 @@ export function build(brickNumber) {
     // each brick in the middle column has to be set with the 
     // custom data attribute foundation receiving the value true
 
-    var counter = 0
+    var counter = 1
 
     var intervalID = setInterval(function () {
         var brick = document.createElement('div')
         document.body.append(brick)
         brick.setAttribute('id', 'brick-' + counter)
-        if(counter%3===0){
+        if((counter-3)%2===0){
             brick.setAttribute('data-foundation', true)
         }
         brick.setAttribute('data-repaired', false)
         counter++
-        if (counter === brickNumber) {
+        if (counter-1 === brickNumber) {
             clearInterval(intervalID)
         }
 
@@ -42,7 +42,7 @@ export function repair(...given) {
     for (let i = 0; i < ids.length; i++) {
         let brick = document.getElementById(ids[i])
         console.log(brick)
-        if(i%3===0){
+        if((i-2)%3===0){
             /*custom attribute repaired set to in progress*/
             brick.dataset.repaired =('data-repaired', 'in progress')
         } else {
