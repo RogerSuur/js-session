@@ -26,7 +26,7 @@ export function build(brickNumber) {
             clearInterval(intervalID)
         }
 
-    }, 20);
+    }, 100);
 
 };
 
