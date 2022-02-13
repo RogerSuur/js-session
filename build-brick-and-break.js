@@ -17,7 +17,7 @@ export function build(brickNumber) {
         var brick = document.createElement('div')
         document.body.append(brick)
         brick.setAttribute('id', 'brick-' + counter)
-        if((counter-3)%2===0){
+        if(counter%3===2){
             brick.setAttribute('data-foundation', true)
         }
         brick.setAttribute('data-repaired', false)
@@ -42,7 +42,7 @@ export function repair(...given) {
     for (let i = 0; i < ids.length; i++) {
         let brick = document.getElementById(ids[i])
         console.log(brick)
-        if((i-2)%3===0){
+        if((i+1)%3===2){
             /*custom attribute repaired set to in progress*/
             brick.dataset.repaired =('data-repaired', 'in progress')
         } else {
