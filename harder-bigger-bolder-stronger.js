@@ -16,7 +16,7 @@ export function generateLetters(){
             } else if (40<=i && i<80) {
                 console.log(i, "font: 400")
                 element.style.fontWeight = '400';
-            } else if ( i>=80) {
+            } else { //(i>=80) {
                 console.log(i, "font: 600")
                 element.style.fontWeight = '600';
             }
