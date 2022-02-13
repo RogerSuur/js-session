@@ -42,7 +42,7 @@ export function repair(...given) {
     for (let i = 0; i < ids.length; i++) {
         let brick = document.getElementById(ids[i])
         console.log(brick)
-        if((i+1)%3===2){
+        if(brick.dataset.foundation){
             /*custom attribute repaired set to in progress*/
             brick.dataset.repaired =('data-repaired', 'in progress')
         } else {
