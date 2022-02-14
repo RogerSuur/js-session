@@ -8,6 +8,8 @@
 //       temperature: ' 84 ° F   ',
 //     },
 //   ]) 
+// Create a function named citiesOnly which takes an array of objects and which return an array of strings 
+//from the key city.
 
 //upperCasingStates(['alabama', 'new jersey'])
 
@@ -30,15 +32,15 @@ function upperCasingStates(arrayOfStrings) {
 
     let mapOfCities = new Map();
     
-    mapOfCities = arrayOfStrings.map(obj => newObj)
+    mapOfCities = arrayOfStrings.map(obj => obj.charAt(0).toUpperCase() + obj.slice(1))
 
-    console.log(obj.city)
-    var arrayOfUppercaseStrings = [];
+    console.log(mapOfCities)
+    // var arrayOfUppercaseStrings = [];
     
-    var newObj = (obj.city.charAt(0).toUpperCase() + obj.city.slice(1))
-    console.log(newObj)
-    //console.log(arrayOfUppercaseStrings)
-    return arrayOfUppercaseStrings
+    // var newObj = (obj.city.charAt(0).toUpperCase() + obj.city.slice(1))
+    // console.log(newObj)
+    // //console.log(arrayOfUppercaseStrings)
+    // return arrayOfUppercaseStrings
 };
 
 // Create a function named fahrenheitToCelsius which takes an array of fahrenheit temperatures which converts them to Celsius. 
