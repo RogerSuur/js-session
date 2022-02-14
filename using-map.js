@@ -32,12 +32,11 @@ function upperCasingStates(arrayOfStrings) {
 
     let mapOfCities = new Map();
 
-    var re = /(\b[a-z])/g
+    //var re = /(\b[a-z])/g
     
-    
-
-    //mapOfCities = arrayOfStrings.map(obj => obj.charAt(0).toUpperCase() + obj.slice(1))
-    //console.log(mapOfCities)
+    mapOfCities = arrayOfStrings.map(obj => obj.charAt(0).toUpperCase() + obj.slice(1))
+   
+    console.log(mapOfCities)
     // return arrayOfUppercaseStrings
 };
 
