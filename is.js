@@ -19,7 +19,7 @@ is.bool = (n) => typeof n == "boolean";
 is.undef = (n) =>  n === undefined;
 is.def = (n) => typeof n === !undefined;
 is.arr = (n) => Array.isArray(n);
-is.obj = (n) => typeof n === Object && n ===null ;
+is.obj = (n) => n === Object && n ===null ;
 is.fun = (n) => typeof n === function(){};
 is.truthy = (n) => typeof n === true;
 is.falsy = (n) => typeof n=== false;

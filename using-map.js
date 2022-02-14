@@ -32,9 +32,12 @@ function upperCasingStates(arrayOfStrings) {
 
     let mapOfCities = new Map();
 
-    //var re = /(\b[a-z])/g
+    const regex = /(\b\w)/g
+    //const found = arrayOfStrings.match(regex)
     
-    mapOfCities = arrayOfStrings.map(obj => obj.charAt(0).toUpperCase() + obj.slice(1))
+   // mapOfCities = arrayOfStrings.map(obj => obj.charAt(0).toUpperCase() + obj.slice(1))
+   
+    mapOfCities = arrayOfStrings.map(obj => obj.match(regex) + obj.slice(1))
    
     console.log(mapOfCities)
     // return arrayOfUppercaseStrings
