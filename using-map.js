@@ -9,17 +9,18 @@
 //     },
 //   ]) 
 
-  //upperCasingStates(['alabama', 'new jersey'])
+//upperCasingStates(['alabama', 'new jersey'])
 
-function citiesOnly(objArray){
-    var arrayOfCities = [];
-    //console.log(Object.values(objArray))
+function citiesOnly(objArray) {
+    //var arrayOfCities = [];
+    let map = new Map();
     for (let i = 0; i < objArray.length; i++) {
         //console.log(objArray[i].city);
-        arrayOfCities.push(objArray[i].city)
+        //arrayOfCities.push(objArray[i].city)
+        map.set(objArray[i].city)
     }
     //console.log(arrayOfCities)
-    return arrayOfCities
+    return map
     //console.log(objArray[1].city)
 };
 
@@ -28,15 +29,26 @@ function citiesOnly(objArray){
 // Example:
 //upperCasingStates(['alabama', 'new jersey']) // -> ['Alabama', 'New Jersey']
 
-function upperCasingStates(arrayOfStrings){
+function upperCasingStates(arrayOfStrings) {
 
-var arrayOfUppercaseStrings = [];
+    var arrayOfUppercaseStrings = [];
     //console.log(Object.values(objArray))
     for (let i = 0; i < arrayOfStrings.length; i++) {
         //console.log(arrayOfStrings[i]);
         //console.log("arrayofstrings:", arrayOfStrings[i].charAt(0).toUpperCase(), "slice:", arrayOfStrings[i].slice(1));
-        arrayOfUppercaseStrings.push( arrayOfStrings[i].charAt(0).toUpperCase() + arrayOfStrings[i].slice(1))
+        arrayOfUppercaseStrings.push(arrayOfStrings[i].charAt(0).toUpperCase() + arrayOfStrings[i].slice(1))
     }
     //console.log(arrayOfUppercaseStrings)
     return arrayOfUppercaseStrings
+};
+
+// Create a function named fahrenheitToCelsius which takes an array of fahrenheit temperatures which converts them to Celsius. 
+//Round down the result.
+// The function then returns the result as an array of strings like below:
+
+// Example:
+// fahrenheitToCelsius(['68°F', '59°F', '25°F']) // -> ['20°C', '15°C', '-4°C']
+
+function fahrenheitToCelsius(arrayOfObjects) {
+
 };
