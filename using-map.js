@@ -31,15 +31,13 @@ upperCasingStates(['alabama', 'new jersey']) // -> ['Alabama', 'New Jersey']
 function upperCasingStates(arrayOfStrings) {
 
     let mapOfCities = new Map();
-    
-    mapOfCities = arrayOfStrings.map(obj => obj.charAt(0).toUpperCase() + obj.slice(1))
 
-    console.log(mapOfCities)
-    // var arrayOfUppercaseStrings = [];
+    var re = /(\b[a-z])/g
     
-    // var newObj = (obj.city.charAt(0).toUpperCase() + obj.city.slice(1))
-    // console.log(newObj)
-    // //console.log(arrayOfUppercaseStrings)
+    
+
+    //mapOfCities = arrayOfStrings.map(obj => obj.charAt(0).toUpperCase() + obj.slice(1))
+    //console.log(mapOfCities)
     // return arrayOfUppercaseStrings
 };
 
