@@ -28,9 +28,14 @@ function citiesOnly(objArray) {
 
 function upperCasingStates(arrayOfStrings) {
 
-    var arrayOfUppercaseStrings = [];
-    //console.log(Object.values(objArray))
+    let mapOfCities = new Map();
     
+    mapOfCities = objArray.map(obj => obj.city)
+
+    var arrayOfUppercaseStrings = [];
+    
+    var newObj = (obj.city.charAt(0).toUpperCase() + obj.city.slice(1))
+    console.log(newObj)
     //console.log(arrayOfUppercaseStrings)
     return arrayOfUppercaseStrings
 };

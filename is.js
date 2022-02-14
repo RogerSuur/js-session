@@ -15,7 +15,7 @@
 is.num = (n) => typeof n === 'number';
 is.nan = (n) => Number.isNaN(n);
 is.str = (n) => typeof n === 'string';
-is.bool = (n) => typeof boolean;
+is.bool = (n) => typeof Boolean;
 is.undef = (n) => typeof n === undefined;
 is.def = (n) => typeof n === !undefined;
 is.arr = (n) => typeof n === Array;
