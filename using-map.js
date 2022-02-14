@@ -1,27 +1,24 @@
-// citiesOnly([
-//     {
-//       city: 'Los Angeles',
-//       temperature: '  101 °F   ',
-//     },
-//     {
-//       city: 'San Francisco',
-//       temperature: ' 84 ° F   ',
-//     },
-//   ]) 
+citiesOnly([
+    {
+      city: 'Los Angeles',
+      temperature: '  101 °F   ',
+    },
+    {
+      city: 'San Francisco',
+      temperature: ' 84 ° F   ',
+    },
+  ]) 
 
 //upperCasingStates(['alabama', 'new jersey'])
 
 function citiesOnly(objArray) {
-    //var arrayOfCities = [];
-    let map = new Map();
-    for (let i = 0; i < objArray.length; i++) {
-        //console.log(objArray[i].city);
-        //arrayOfCities.push(objArray[i].city)
-        map.set(objArray[i].city)
-    }
-    //console.log(arrayOfCities)
-    return map
-    //console.log(objArray[1].city)
+    
+    let mapOfCities = new Map();
+    
+    mapOfCities = objArray.map(obj => obj.city)
+    console.log(mapOfCities)
+    return mapOfCities
+    
 };
 
 //     Create a function named upperCasingStates which takes an array of strings and which Upper Case each words of a string.
@@ -33,11 +30,7 @@ function upperCasingStates(arrayOfStrings) {
 
     var arrayOfUppercaseStrings = [];
     //console.log(Object.values(objArray))
-    for (let i = 0; i < arrayOfStrings.length; i++) {
-        //console.log(arrayOfStrings[i]);
-        //console.log("arrayofstrings:", arrayOfStrings[i].charAt(0).toUpperCase(), "slice:", arrayOfStrings[i].slice(1));
-        arrayOfUppercaseStrings.push(arrayOfStrings[i].charAt(0).toUpperCase() + arrayOfStrings[i].slice(1))
-    }
+    
     //console.log(arrayOfUppercaseStrings)
     return arrayOfUppercaseStrings
 };
