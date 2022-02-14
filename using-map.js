@@ -40,8 +40,8 @@ function upperCasingStates(arrayOfStrings) {
     //mapOfCities = arrayOfStrings.map(obj => obj.match(regex) + obj.slice(1))
    mapOfCities = arrayOfStrings.map(function newfunction (inputvalue){
 
-
     
+
    })
     console.log(mapOfCities)
     // return arrayOfUppercaseStrings
