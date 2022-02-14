@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+        <script type="module" src="./sortable.js"></script>
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <table id="table_id" class="display">
+        <thead>
+            <tr>
+                <th>Icon</th>
+                <th>Name</th>
+                <th>Full Name</th>
+                <th>Powerstats</th>
+                <th>Race</th>
+                <th>Gender</th>
+                <th>Height</th>
+                <th>Weight</th>
+                <th>Place of birth</th>
+                <th>Alignement</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1 Data 1</td>
+                <td>Row 1 Data 2</td>
+            </tr>
+            <tr>
+                <td>Row 2 Data 1</td>
+                <td>Row 2 Data 2</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+</body>
+
+
+</html>
+
+
+<script type="module">
+    // import { hero } from "./sortable.js";
+    // { hero }
+    $('#table_id').DataTable( {
+    data: [  
+//     {
+//     "id": 1,
+//     "name": "A-Bomb",
+//     "slug": "1-a-bomb",
+//     "powerstats": {
+//       "intelligence": 38,
+//       "strength": 100,
+//       "speed": 17,
+//       "durability": 80,
+//       "power": 24,
+//       "combat": 64
+//     },
+//     "appearance": {
+//       "gender": "Male",
+//       "race": "Human",
+//       "height": [
+//         "6'8",
+//         "203 cm"
+//       ],
+//       "weight": [
+//         "980 lb",
+//         "441 kg"
+//       ],
+//       "eyeColor": "Yellow",
+//       "hairColor": "No Hair"
+//     },
+//     "biography": {
+//       "fullName": "Richard Milhouse Jones",
+//       "alterEgos": "No alter egos found.",
+//       "aliases": [
+//         "Rick Jones"
+//       ],
+//       "placeOfBirth": "Scarsdale, Arizona",
+//       "firstAppearance": "Hulk Vol 2 #2 (April, 2008) (as A-Bomb)",
+//       "publisher": "Marvel Comics",
+//       "alignment": "good"
+//     },
+//     "work": {
+//       "occupation": "Musician, adventurer, author; formerly talk show host",
+//       "base": "-"
+//     },
+//     "connections": {
+//       "groupAffiliation": "Hulk Family; Excelsior (sponsor), Avengers (honorary member); formerly partner of the Hulk, Captain America and Captain Marvel; Teen Brigade; ally of Rom",
+//       "relatives": "Marlo Chandler-Jones (wife); Polly (aunt); Mrs. Chandler (mother-in-law); Keith Chandler, Ray Chandler, three unidentified others (brothers-in-law); unidentified father (deceased); Jackie Shorr (alleged mother; unconfirmed)"
+//     },
+//     "images": {
+//       "xs": "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/xs/1-a-bomb.jpg",
+//       "sm": "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/sm/1-a-bomb.jpg",
+//       "md": "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/1-a-bomb.jpg",
+//       "lg": "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/lg/1-a-bomb.jpg"
+//     }
+//   },
+]
+,
+    columns: [
+        { data: 'id' },
+        { data: '.name' },
+        { data: 'biography.fullName' },
+        { data: 'powerstats.' },
+        { data: 'appearance.race' },
+        { data: 'appearance.gender' },
+        { data: 'appearance.height' },
+        { data: 'appearance.weight' },
+        { data: 'biography.placeOfBirth' },
+        { data: 'biography.alignment' },
+    ]
+} );
+</script>
+
