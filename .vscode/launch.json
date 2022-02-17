@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/count-leap-years.js"
+            "program": "${workspaceFolder}/using-reduce.js"
         }
     ]
 }
