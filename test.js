@@ -1,33 +1,16 @@
-var details = {
-    "customer": {
-       "customerDetails": {
-          "otherDetails": [
-             {
-                "customerDetails": {
-                   "isMarried": false
-                },
-             },
-             {
-                "customerDetails": {
-                   "isMarried": false
-                },
-             },
-             {
-                "customerDetails": {
-                   "isMarried": false
-                }
-             }
-          ]
-       }
+function vowel_count(str1)
+{
+  var vowel_list = 'aeiouAEIOU';
+  var vcount = 0;
+  
+  for(var x = 0; x < str1.length ; x++)
+  {
+    if (vowel_list.indexOf(str1[x]) !== -1)
+    {
+      vcount += 1;
     }
- }
-
- console.log("All values are set to true=");
-//  for (var index = 0; index < details.customer.customerDetails['otherDetails'].length; index++) {
-//     details.customer.customerDetails['otherDetails'][index].customerDetails['isMarried'] = true;
-//  }
-//  for (var index = 0; index < details.customer.customerDetails['otherDetails'].length; index++) {
-//     console.log("isMarried:"+details.customer.customerDetails['otherDetails'][index
-//     ].customerDetails['isMarried']);
-//  }
-console.log(details.customer.customerDetails['otherDetails'][1].customerDetails['isMarried'])
+  
+  }
+  return vcount;
+}
+console.log(vowel_count("The quick brown fox"));
