@@ -9,8 +9,4 @@ function invert (obj){
     }
   }
   return retobj;
-
-    
-    
-
 }
