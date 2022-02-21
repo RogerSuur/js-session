@@ -1,14 +1,18 @@
-var arr = [1, 2, 3, 4];
-
-arr.flatMap(x => [x, x * 2]);
-// is equivalent to
-var n = arr.length;
-var acc = new Array(n * 2);
-for (let i = 0; i < n; i++){
-	var x = arr[i];
-	acc[i * 2] = x;
-	acc[i * 2 + 1] = x * 2;
+function checkNested(obj /*, level1, level2, ... levelN*/) {
+    var args = Array.prototype.slice.call(arguments, 1);
+    console.log(args)
+    for (var i = 0; i < args.length; i++) {
+      if (!obj || !obj.hasOwnProperty(args[i])) {
+        return false;
+      }
+      obj = obj[args[i]];
+      console.log("i",i, "obj", obj)
+    }
+    console.log("full obj", obj)
+    return true;
 }
-console.log(acc)
-console.log(arr.flatMap(x => [x, x * 2]))
-// [1, 2, 2, 4, 3, 6, 4, 8]
+  
+  var test = { a: { b: [1, 2], c: { d: 2 } } };
+  
+ console.log( checkNested(test, 'b: [ 1, 2 ]', 'c: { d: 2 }')); // true
+ //console.log( checkNested(test, 'a', 'c')) // false
